@@ -1,0 +1,90 @@
+.home-page-main {
+	width: 100vw;
+}
+
+.home-page {
+	background-image: url("../../assets/rows-beautiful-pink-flowers-trees.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.home-page-title {
+	color: yellow;
+	font-family: "GreatVibes";
+	font-style: italic;
+	font-size: 2.5rem;
+	padding: 1rem;
+}
+
+.button__container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 1rem;
+}
+
+.home-page-button {
+	background-color: #094f2a;
+	width: 150px;
+	color: white;
+	padding: 0.75rem;
+	border-radius: 6px;
+	text-align: center;
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	.home-page-title {
+		font-size: 2rem;
+	}
+
+	.button__container {
+		gap: 10px;
+	}
+
+	.home-page-button {
+		width: 120px;
+		font-size: 0.9rem;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1399px) {
+	.home-page-title {
+		font-size: 2.5rem;
+	}
+
+	.button__container {
+		gap: 20px;
+	}
+
+	.home-page-button {
+		width: 150px;
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1400px) {
+	.home-page-title {
+		padding-top: 1em;
+	}
+
+	.button__container {
+		flex-direction: row;
+		padding-left: 0;
+		padding-top: 0;
+		gap: 200px;
+		margin-top: 20vh;
+	}
+
+	.home-page-button {
+		width: 175px;
+	}
+}

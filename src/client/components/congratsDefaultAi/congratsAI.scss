@@ -1,0 +1,68 @@
+.user-page {
+	position: relative;
+	width: 100vw;
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+	color: #333;
+	font-family: "Arial", sans-serif;
+	text-align: center;
+	padding: 20px;
+
+	.heart {
+		position: absolute;
+		top: -10%;
+		font-size: clamp(20px, 3vw, 30px);
+		color: #ff6b6b;
+		user-select: none;
+		z-index: 1;
+		pointer-events: none;
+	}
+
+	.content {
+		position: relative;
+		max-width: 1200px;
+		width: 100%;
+		padding: 30px;
+		background: rgba(255, 255, 255, 0.95);
+		border-radius: 20px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(10px);
+		z-index: 2;
+		margin: 20px;
+
+		h1 {
+			font-size: clamp(1.8rem, 4vw, 2.5rem);
+			margin-bottom: 1.5rem;
+			color: #ff6b6b;
+			line-height: 1.2;
+		}
+
+		p {
+			font-size: clamp(1rem, 2vw, 1.2rem);
+			line-height: 1.6;
+			white-space: pre-line;
+			margin: 0 auto;
+			max-width: 800px; // Ограничиваем ширину текста для удобства чтения
+		}
+	}
+
+	@media (max-width: 1500px) {
+		.content {
+			max-width: 90%; // На экранах меньше 1500px контент занимает 90% ширины
+		}
+	}
+
+	@media (max-width: 768px) {
+		padding: 10px;
+
+		.content {
+			padding: 20px;
+			margin: 10px;
+			max-width: 100%; // На мобильных устройствах контент занимает всю ширину
+		}
+	}
+}
