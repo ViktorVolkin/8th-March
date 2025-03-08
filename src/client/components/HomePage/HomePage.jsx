@@ -1,5 +1,6 @@
 import React from "react";
-import "./homePage.scss";
+import "./HomePage.scss";
+
 import "../../globalStyles.scss";
 import { Link } from "react-router-dom";
 
